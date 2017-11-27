@@ -1,25 +1,46 @@
-# README
+# Product Review
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### _It will show detail of products and products review _
 
-Things you may want to cover:
+#### By _**Richa Shaurbh**_
 
-* Ruby version
+## Description
 
-* System dependencies
+_It will allow admin to add, edit, delete products and user to add review like rating, about product _
 
-* Configuration
+## Setup/Installation Requirements
 
-* Database creation
+    ## Development server
 
-* Database initialization
+    Run `rails server` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+    ## Gemfile Installation
 
-* Deployment instructions
+    Run `bundle install` to install gemfile.
+    ## Running unit tests
 
-* ...
-# product_review
+    ## Running end-to-end tests
+
+    Run `rspec` to execute the end-to-end tests
+
+    ## Faker Seed creation
+
+    Run `rake db:seed` to feed data in database
+
+    ## Specifications
+
+
+    ## Known Bugs
+
+    _There are no known bugs at this time._
+
+  ## Support and contact details
+
+  _If you run into any issues or have questions, ideas or concerns, or if you would like to contribute to the code, please contact: richa.shaurbh@gmail.com ._
+
+  ## Technologies Used
+
+  _This application was created with Ruby_
+
+  ### License
