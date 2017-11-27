@@ -1,0 +1,28 @@
+<p><%= link_to "Return to Products", products_path %></p>
+<p><%= link_to "Edit", edit_product_path(@product) %></p>
+<p><%= link_to "Delete", product_path(@product),
+                         :data => {:confirm => "You sure?",
+                                   :method => "delete"} %></p>
+<p><%= link_to "Add a review", new_product_review_path(@product) %></p>
+<br>
+
+<h1><%= @product.name %> Details</h1>
+<li>Product Price: <%= @product.cost %></li>
+<li>Product Origin Country: <%= @product.country %></li>
+<li>Product Review: </li>
+<% if @product.reviews.any? %>
+  <ul>
+    <% @product.reviews.each do |review| %>
+      <li> Reviewer Name: <%= review.author %>
+      <li> Rating: <%= review.rating %> </li>
+      <li> Content: <%= review.content_body %> </li>
+
+      </li>
+      <br>
+      <hr>
+      <br>
+    <% end %>
+</ul>
+<% else %>
+  <p>There are no review yet!</p>
+<% end %>

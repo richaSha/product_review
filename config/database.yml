@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+
+development:
+  <<: *default
+  database: product_review_development
+
+test:
+  <<: *default
+  database: product_review_test
+
+production:
+  <<: *default
+  database: product_review_production
+  username: product_review
+  password: <%= ENV['EXAMPLE_DATABASE_PASSWORD'] %>
